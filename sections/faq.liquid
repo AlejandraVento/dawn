@@ -1,12 +1,36 @@
 {% schema %}
 {
-  "name": "t:sections.faq.name",
+  "name": "FAQ",
   "tag": "section",
   "class": "section",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "label": "Headline",
+      "id": "headline"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "question",
+      "type": "question",
+      "settings": [
+        {
+          "type": "text",
+          "label": "question",
+          "id": "question"
+        },
+        {
+          "type": "text",
+          "label": "answer",
+          "id": "answer"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "t:sections.faq.presets.name"
+      "name": "FAQ"
     }
   ]
 }
